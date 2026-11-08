@@ -64,6 +64,8 @@ report/          报告、slides、poster 源文件
 
 ## 环境与运行
 
+C 部分的求解器、E2/E9/E4 与验证已在本地实现。复现命令、接口、审核版本和分支依赖见 [C 交付说明](docs/C_handoff.md)，报告文字见 [C algorithms and results](report/C_sections.md)。
+
 运行环境为 Python 3.9 及以上，依赖 NumPy、SciPy、Matplotlib。不要求 GPU，不依赖网络。
 
 ```bash

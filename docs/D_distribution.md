@@ -1,5 +1,28 @@
 # D: poster distribution handoff
 
+## Final poster integration (2026-11-08)
+
+The C-dependent release work described below is now completed by
+`experiments/run_d_poster.py`. Use this command for the **formal grid figure**:
+
+```powershell
+python -m experiments.run_d_poster --tag v2
+```
+
+Verified v1 artifacts already exist. The script consumes C's
+`results/e2_policies_v3.json`, restores tuple coordinates after JSON loading,
+uses budget-table column zero as the actual fallback, and reuses C's
+`tail_evaluation.py` (credit belongs to C) to complete residual first moments.
+It re-solves VI and budget DP, compares the retained PMF against D's original
+propagation, and repeats at cutoff 320 versus 160. All checks passed.
+
+For E: use `figures/d_poster_v1.pdf` (vector) or `.png`, with the caption in
+`report/D_poster_handoff.md`. Complete CSV data and verification records are
+under `results/d_poster_v1_*`. The earlier fixed-route figures remain preliminary.
+
+The following describes the original strict finite-support API and preliminary
+demo; its refusal to compute metrics from an unknown tail remains intentional.
+
 Run from repository root (NumPy and Matplotlib required):
 
 ```powershell

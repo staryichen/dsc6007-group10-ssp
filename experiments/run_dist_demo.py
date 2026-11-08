@@ -111,8 +111,13 @@ def main():
            'd_grid_fixed_'+args.tag, 'Fixed routes only (p=0, q=0.1; not solver optima)',.9,400)
     if args.policy_json:
         data = json.loads(Path(args.policy_json).read_text(encoding='utf-8'))
-        env = make_grid(**data['grid'])
-        pi = budget_policy(data['budget_policy'],data['initial_budget'],data['mean_policy'])
+        params = dict(data['grid'])
+        for key in ('start', 'goal', 'zone_rows', 'zone_cols'):
+            if key in params:
+                params[key] = tuple(params[key])
+        env = make_grid(**params)
+        fallback = data.get('fallback', np.asarray(data['budget_policy'])[:, 0])
+        pi = budget_policy(data['budget_policy'],data['initial_budget'],fallback)
         export(env,[('Mean-optimal',data['mean_policy']),('CVaR-optimal',pi)],
                'd_grid_solver_'+args.tag,'Solver policies (values require cross-check)',
                data['alpha'],data.get('cutoff',2000))

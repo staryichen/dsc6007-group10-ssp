@@ -1,0 +1,187 @@
+{
+  "source_commit": "22675a2933b9011127bddf5c04f9cdbfc0f5f98c",
+  "source_sha256": {
+    "ssp/__init__.py": "32702a1d76006e82352e792e941edb8fc985aeed271e03c0664cfac924a009f8",
+    "ssp/envs/__init__.py": "e3948bd7c534b402a426d5c3159174078662827bd13fedcdebe6f560bc13436c",
+    "ssp/envs/_checks.py": "da51ffc35fc72c1c02a91f452e6a5220007f27b1bf3d2f6f4e3c3d2aff7a81b4",
+    "ssp/envs/acyclic.py": "6e253d5bd7babcb8f293acaec2431a195af533696935fdd96915b4e6121dd007",
+    "ssp/envs/toy.py": "11c98d49800118b9825d42d4d898b7cc979039bae523f96ba0fba4b1a3ddb809",
+    "ssp/mdp.py": "4cf89f8f4fdcfa39b2bef87cf06c55b303a618e09feaedd7a1a6e923aac3a308",
+    "ssp/risk.py": "ba1016ae396c4bf09b2e6a8a6f3fe564e5b46a0ffff666141c70abc931be2aa7",
+    "ssp/solvers/dist.py": "6fe82fccfc9219e5e0bb96b779300bfe96270a1714dee97dc2a24b85ad1980f7"
+  },
+  "alpha": "9/10",
+  "arithmetic": "将环境中的十进制概率转换为 fractions.Fraction 精确分数",
+  "best_policy": "YX",
+  "best_cvar": "239/10",
+  "best_stationary_policy": "YY",
+  "improvement": "21/10",
+  "optimal_integer_thresholds": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "policies": [
+    {
+      "policy": "XX",
+      "decisions": [
+        {
+          "state": "S",
+          "spent": 0,
+          "action": "go"
+        },
+        {
+          "state": "M",
+          "spent": 1,
+          "action": "X"
+        },
+        {
+          "state": "M",
+          "spent": 20,
+          "action": "X"
+        }
+      ],
+      "dist": {
+        "2": "81/100",
+        "21": "9/100",
+        "31": "9/100",
+        "50": "1/100"
+      },
+      "mean": "34/5",
+      "var": 21,
+      "cvar": "329/10",
+      "tail": [
+        [
+          50,
+          "1/100"
+        ],
+        [
+          31,
+          "9/100"
+        ]
+      ]
+    },
+    {
+      "policy": "XY",
+      "decisions": [
+        {
+          "state": "S",
+          "spent": 0,
+          "action": "go"
+        },
+        {
+          "state": "M",
+          "spent": 1,
+          "action": "X"
+        },
+        {
+          "state": "M",
+          "spent": 20,
+          "action": "Y"
+        }
+      ],
+      "dist": {
+        "2": "81/100",
+        "26": "1/10",
+        "31": "9/100"
+      },
+      "mean": "701/100",
+      "var": 26,
+      "cvar": "61/2",
+      "tail": [
+        [
+          31,
+          "9/100"
+        ],
+        [
+          26,
+          "1/100"
+        ]
+      ]
+    },
+    {
+      "policy": "YX",
+      "decisions": [
+        {
+          "state": "S",
+          "spent": 0,
+          "action": "go"
+        },
+        {
+          "state": "M",
+          "spent": 1,
+          "action": "Y"
+        },
+        {
+          "state": "M",
+          "spent": 20,
+          "action": "X"
+        }
+      ],
+      "dist": {
+        "7": "9/10",
+        "21": "9/100",
+        "50": "1/100"
+      },
+      "mean": "869/100",
+      "var": 7,
+      "cvar": "239/10",
+      "tail": [
+        [
+          50,
+          "1/100"
+        ],
+        [
+          21,
+          "9/100"
+        ]
+      ]
+    },
+    {
+      "policy": "YY",
+      "decisions": [
+        {
+          "state": "S",
+          "spent": 0,
+          "action": "go"
+        },
+        {
+          "state": "M",
+          "spent": 1,
+          "action": "Y"
+        },
+        {
+          "state": "M",
+          "spent": 20,
+          "action": "Y"
+        }
+      ],
+      "dist": {
+        "7": "9/10",
+        "26": "1/10"
+      },
+      "mean": "89/10",
+      "var": 7,
+      "cvar": "26",
+      "tail": [
+        [
+          26,
+          "1/10"
+        ]
+      ]
+    }
+  ],
+  "scope": "例子 1 的确定性（状态，已花代价）策略精确穷举；本脚本不验收预算求解器或蒙特卡洛模拟"
+}

@@ -1,0 +1,27 @@
+{
+  "commit": "94aac225b2d731a2c724de5fa0259efc2358816e",
+  "files": {
+    "ssp/__init__.py": "32702a1d76006e82352e792e941edb8fc985aeed271e03c0664cfac924a009f8",
+    "ssp/envs/__init__.py": "e3948bd7c534b402a426d5c3159174078662827bd13fedcdebe6f560bc13436c",
+    "ssp/envs/_checks.py": "da51ffc35fc72c1c02a91f452e6a5220007f27b1bf3d2f6f4e3c3d2aff7a81b4",
+    "ssp/envs/acyclic.py": "6e253d5bd7babcb8f293acaec2431a195af533696935fdd96915b4e6121dd007",
+    "ssp/envs/grid.py": "9a41fb2860ba3ae172e3847f1a7b31fc82cc0f0406785655ccbee047a8e0aa8e",
+    "ssp/envs/toy.py": "11c98d49800118b9825d42d4d898b7cc979039bae523f96ba0fba4b1a3ddb809",
+    "ssp/figstyle.py": "5d7ef5562452005419dbe5e65d49eace0cb0915c0a9d1ebda9a8a615f793013d",
+    "ssp/mdp.py": "4cf89f8f4fdcfa39b2bef87cf06c55b303a618e09feaedd7a1a6e923aac3a308",
+    "ssp/risk.py": "ba1016ae396c4bf09b2e6a8a6f3fe564e5b46a0ffff666141c70abc931be2aa7",
+    "ssp/solvers/budget_dp.py": "89582c5e6a3686eed1f785005f4099447917f0537dde6b16461ca313952e7361",
+    "ssp/solvers/dist.py": "6fe82fccfc9219e5e0bb96b779300bfe96270a1714dee97dc2a24b85ad1980f7",
+    "ssp/solvers/expected.py": "8fc364485511b938ff90286be4782dd4b1b38f18b92f4a4104dfc3d328f3e367",
+    "ssp/solvers/lp.py": "70b10231822d3ca9e4c78939794d2fa550bb0296c846a465b78d460e7054358a",
+    "ssp/solvers/pi.py": "c1bb50ec5b3fd6b89593facd8988cde07d4cdb4a3c3b5d7b2113a7fc4fa7af7d",
+    "ssp/solvers/tail_evaluation.py": "69f4e80ed888db2ec17822e012ccb816a1307a53b8a4ad66ddda4850246e83a5",
+    "ssp/solvers/vi.py": "f0c01bdb23f4f59fde4f32e794e97345975bc207600782bd8a8bfa65e0208a79"
+  },
+  "environment": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.2"
+  }
+}

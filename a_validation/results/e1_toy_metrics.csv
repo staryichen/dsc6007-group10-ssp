@@ -1,0 +1,7 @@
+environment,action,mean,variance,var_0.9,cvar_0.9
+toy_two_route,bridge,10.9,882.09,1,100.0
+toy_two_route,detour,12.0,0.0,12,12.0
+toy_same_mean,A,11.0,9.0,10,20.0
+toy_same_mean,B,11.0,0.0,11,11.0
+toy_occasional_fast,C,10.0,9.0,11,11.0
+toy_occasional_fast,B,11.0,0.0,11,11.0

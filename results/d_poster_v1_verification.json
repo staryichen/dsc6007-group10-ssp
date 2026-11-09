@@ -1,0 +1,29 @@
+{
+  "source": "results\\e2_policies_v3.json",
+  "source_sha256": "62de091d402154981c46809c402a470e59f51b7d9109a259386659afaeed4a06",
+  "cutoff": 160,
+  "display_xmax": 73,
+  "checks": [
+    {
+      "policy": "Mean-optimal",
+      "solver_abs_error": 3.5633718198369024e-12,
+      "saved_objective_abs_error": 3.566924533515703e-12,
+      "doubled_cutoff_mean_error": 0.0,
+      "doubled_cutoff_cvar_error": 0.0,
+      "probability_sum": 1.000000000000002,
+      "pmf_max_error": 0.0
+    },
+    {
+      "policy": "CVaR-optimal",
+      "solver_abs_error": 0.0,
+      "saved_objective_abs_error": 0.0,
+      "doubled_cutoff_mean_error": 0.0,
+      "doubled_cutoff_cvar_error": 0.0,
+      "probability_sum": 1.0000000000000027,
+      "pmf_max_error": 0.0
+    }
+  ],
+  "budget_certified": true,
+  "mean_premium_percent": 17.60960795626618,
+  "cvar_reduction_percent": 23.33528630831151
+}

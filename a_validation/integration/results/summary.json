@@ -1,0 +1,9 @@
+{
+  "c_commit": "94aac225b2d731a2c724de5fa0259efc2358816e",
+  "scope": "两个无环例子的 C 正式策略独立验收，不包含全部网格实验",
+  "exact_cases": 20,
+  "mc_cases": 20,
+  "mc_within_3se": 20,
+  "exact_pass": true,
+  "mc_pass": true
+}

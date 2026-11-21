@@ -1,0 +1,3 @@
+policy,alpha,cutoff,overflow,mean,var,cvar,parameters
+Bridge,0.9,100,0.0,10.9,1,100.00000000000003,"{""closed"": 100, ""detour"": 12, ""fast"": 1, ""p_closed"": 0.1}"
+Detour,0.9,100,0.0,12.0,12,12.0,"{""closed"": 100, ""detour"": 12, ""fast"": 1, ""p_closed"": 0.1}"

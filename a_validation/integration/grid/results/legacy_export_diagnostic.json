@@ -1,0 +1,12 @@
+[
+  {
+    "policy": "mean",
+    "legacy_export_metrics_rejected": true,
+    "error": "complete PMF required; increase cutoff or bound residual costs"
+  },
+  {
+    "policy": "cvar",
+    "legacy_export_metrics_rejected": true,
+    "error": "complete PMF required; increase cutoff or bound residual costs"
+  }
+]

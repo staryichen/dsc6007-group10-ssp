@@ -1,0 +1,3 @@
+policy,solver_abs_error,saved_objective_abs_error,doubled_cutoff_mean_error,doubled_cutoff_cvar_error,probability_sum,pmf_max_error
+Mean-optimal,3.5633718198369024e-12,3.566924533515703e-12,0.0,0.0,1.000000000000002,0.0
+CVaR-optimal,0.0,0.0,0.0,0.0,1.0000000000000027,0.0

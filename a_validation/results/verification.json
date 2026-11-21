@@ -1,0 +1,324 @@
+{
+  "d_commit": "22675a2933b9011127bddf5c04f9cdbfc0f5f98c",
+  "alpha": "9/10",
+  "distribution_checks": [
+    {
+      "label": "XX",
+      "cutoff": 0,
+      "max_pmf_error": 0.0,
+      "overflow": 1.0,
+      "status": "PASS"
+    },
+    {
+      "label": "XX",
+      "cutoff": 6,
+      "max_pmf_error": 0.0,
+      "overflow": 0.19,
+      "status": "PASS"
+    },
+    {
+      "label": "XX",
+      "cutoff": 7,
+      "max_pmf_error": 0.0,
+      "overflow": 0.19,
+      "status": "PASS"
+    },
+    {
+      "label": "XX",
+      "cutoff": 20,
+      "max_pmf_error": 0.0,
+      "overflow": 0.19000000000000003,
+      "status": "PASS"
+    },
+    {
+      "label": "XX",
+      "cutoff": 21,
+      "max_pmf_error": 1.3877787807814457e-17,
+      "overflow": 0.1,
+      "status": "PASS"
+    },
+    {
+      "label": "XX",
+      "cutoff": 49,
+      "max_pmf_error": 1.3877787807814457e-17,
+      "overflow": 0.010000000000000002,
+      "status": "PASS"
+    },
+    {
+      "label": "XX",
+      "cutoff": 50,
+      "max_pmf_error": 1.3877787807814457e-17,
+      "overflow": 0.0,
+      "status": "PASS"
+    },
+    {
+      "label": "XY",
+      "cutoff": 0,
+      "max_pmf_error": 0.0,
+      "overflow": 1.0,
+      "status": "PASS"
+    },
+    {
+      "label": "XY",
+      "cutoff": 6,
+      "max_pmf_error": 0.0,
+      "overflow": 0.19,
+      "status": "PASS"
+    },
+    {
+      "label": "XY",
+      "cutoff": 7,
+      "max_pmf_error": 0.0,
+      "overflow": 0.19,
+      "status": "PASS"
+    },
+    {
+      "label": "XY",
+      "cutoff": 20,
+      "max_pmf_error": 0.0,
+      "overflow": 0.19,
+      "status": "PASS"
+    },
+    {
+      "label": "XY",
+      "cutoff": 21,
+      "max_pmf_error": 0.0,
+      "overflow": 0.19,
+      "status": "PASS"
+    },
+    {
+      "label": "XY",
+      "cutoff": 49,
+      "max_pmf_error": 1.3877787807814457e-17,
+      "overflow": 0.0,
+      "status": "PASS"
+    },
+    {
+      "label": "XY",
+      "cutoff": 50,
+      "max_pmf_error": 1.3877787807814457e-17,
+      "overflow": 0.0,
+      "status": "PASS"
+    },
+    {
+      "label": "YX",
+      "cutoff": 0,
+      "max_pmf_error": 0.0,
+      "overflow": 1.0,
+      "status": "PASS"
+    },
+    {
+      "label": "YX",
+      "cutoff": 6,
+      "max_pmf_error": 0.0,
+      "overflow": 1.0,
+      "status": "PASS"
+    },
+    {
+      "label": "YX",
+      "cutoff": 7,
+      "max_pmf_error": 0.0,
+      "overflow": 0.1,
+      "status": "PASS"
+    },
+    {
+      "label": "YX",
+      "cutoff": 20,
+      "max_pmf_error": 0.0,
+      "overflow": 0.1,
+      "status": "PASS"
+    },
+    {
+      "label": "YX",
+      "cutoff": 21,
+      "max_pmf_error": 1.3877787807814457e-17,
+      "overflow": 0.010000000000000002,
+      "status": "PASS"
+    },
+    {
+      "label": "YX",
+      "cutoff": 49,
+      "max_pmf_error": 1.3877787807814457e-17,
+      "overflow": 0.010000000000000002,
+      "status": "PASS"
+    },
+    {
+      "label": "YX",
+      "cutoff": 50,
+      "max_pmf_error": 1.3877787807814457e-17,
+      "overflow": 0.0,
+      "status": "PASS"
+    },
+    {
+      "label": "YY",
+      "cutoff": 0,
+      "max_pmf_error": 0.0,
+      "overflow": 1.0,
+      "status": "PASS"
+    },
+    {
+      "label": "YY",
+      "cutoff": 6,
+      "max_pmf_error": 0.0,
+      "overflow": 1.0,
+      "status": "PASS"
+    },
+    {
+      "label": "YY",
+      "cutoff": 7,
+      "max_pmf_error": 0.0,
+      "overflow": 0.1,
+      "status": "PASS"
+    },
+    {
+      "label": "YY",
+      "cutoff": 20,
+      "max_pmf_error": 0.0,
+      "overflow": 0.1,
+      "status": "PASS"
+    },
+    {
+      "label": "YY",
+      "cutoff": 21,
+      "max_pmf_error": 0.0,
+      "overflow": 0.1,
+      "status": "PASS"
+    },
+    {
+      "label": "YY",
+      "cutoff": 49,
+      "max_pmf_error": 0.0,
+      "overflow": 0.0,
+      "status": "PASS"
+    },
+    {
+      "label": "YY",
+      "cutoff": 50,
+      "max_pmf_error": 0.0,
+      "overflow": 0.0,
+      "status": "PASS"
+    },
+    {
+      "label": "manual_YX_budget_adapter",
+      "cutoff": 50,
+      "max_pmf_error": 1.3877787807814457e-17,
+      "overflow": 0.0,
+      "status": "PASS"
+    },
+    {
+      "label": "toy_two_route/bridge",
+      "cutoff": 100,
+      "max_pmf_error": 0.0,
+      "overflow": 0.0,
+      "status": "PASS"
+    },
+    {
+      "label": "toy_two_route/detour",
+      "cutoff": 12,
+      "max_pmf_error": 0.0,
+      "overflow": 0.0,
+      "status": "PASS"
+    },
+    {
+      "label": "toy_same_mean/A",
+      "cutoff": 20,
+      "max_pmf_error": 0.0,
+      "overflow": 0.0,
+      "status": "PASS"
+    },
+    {
+      "label": "toy_same_mean/B",
+      "cutoff": 11,
+      "max_pmf_error": 0.0,
+      "overflow": 0.0,
+      "status": "PASS"
+    },
+    {
+      "label": "toy_occasional_fast/C",
+      "cutoff": 11,
+      "max_pmf_error": 0.0,
+      "overflow": 0.0,
+      "status": "PASS"
+    },
+    {
+      "label": "toy_occasional_fast/B",
+      "cutoff": 11,
+      "max_pmf_error": 0.0,
+      "overflow": 0.0,
+      "status": "PASS"
+    }
+  ],
+  "toy_results": [
+    {
+      "environment": "toy_two_route",
+      "action": "bridge",
+      "distribution": {
+        "1": "9/10",
+        "100": "1/10"
+      },
+      "mean": "109/10",
+      "variance": "88209/100",
+      "var": 1,
+      "cvar": "100"
+    },
+    {
+      "environment": "toy_two_route",
+      "action": "detour",
+      "distribution": {
+        "12": "1"
+      },
+      "mean": "12",
+      "variance": "0",
+      "var": 12,
+      "cvar": "12"
+    },
+    {
+      "environment": "toy_same_mean",
+      "action": "A",
+      "distribution": {
+        "10": "9/10",
+        "20": "1/10"
+      },
+      "mean": "11",
+      "variance": "9",
+      "var": 10,
+      "cvar": "20"
+    },
+    {
+      "environment": "toy_same_mean",
+      "action": "B",
+      "distribution": {
+        "11": "1"
+      },
+      "mean": "11",
+      "variance": "0",
+      "var": 11,
+      "cvar": "11"
+    },
+    {
+      "environment": "toy_occasional_fast",
+      "action": "C",
+      "distribution": {
+        "1": "1/10",
+        "11": "9/10"
+      },
+      "mean": "10",
+      "variance": "9",
+      "var": 11,
+      "cvar": "11"
+    },
+    {
+      "environment": "toy_occasional_fast",
+      "action": "B",
+      "distribution": {
+        "11": "1"
+      },
+      "mean": "11",
+      "variance": "0",
+      "var": 11,
+      "cvar": "11"
+    }
+  ],
+  "sampling": false,
+  "c_budget_dp_checked": false
+}

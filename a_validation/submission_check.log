@@ -1,0 +1,62 @@
+正在运行 test_regressions.py
+test_cycle_is_rejected (__main__.VerificationChecks.test_cycle_is_rejected)
+有环 SSP 可以是 proper，但不在这个 DAG 参考求解器的范围内。 ... ok
+test_invalid_actions_and_bounds (__main__.VerificationChecks.test_invalid_actions_and_bounds)
+负动作、无效预算及不足以证明全局搜索的范围均应被拒绝。 ... ok
+test_invalid_distributions (__main__.VerificationChecks.test_invalid_distributions)
+无效概率和空分布应明确报错。 ... ok
+test_partial_atom (__main__.VerificationChecks.test_partial_atom)
+只取分位点原子的部分概率，而不是整个条件尾部。 ... ok
+test_random_small_dags (__main__.VerificationChecks.test_random_small_dags)
+固定二十个种子，各比较三个 α，共六十个独立小环境案例。 ... ok
+test_unreachable_state (__main__.VerificationChecks.test_unreachable_state)
+起点不可达但可到终点的状态仍须有合法参考值。 ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.034s
+
+OK
+正在运行 exact.py
+策略    均值    风险价值 VaR₀.₉    条件风险价值 CVaR₀.₉
+XX      6.80       21      32.9
+XY      7.01       26      30.5
+YX      8.69        7      23.9
+YY      8.90        7      26.0
+通过：4 种策略；概率总和为 1；两种精确 CVaR 算法一致
+最优策略： YX；最优整数阈值范围：7..21
+结果目录：<仓库根目录>/a_validation/results
+正在运行 verify_e1.py
+toy_two_route/bridge：均值=10.9，方差=882.09，风险价值 VaR=1，条件风险价值 CVaR=100
+toy_two_route/detour：均值=12，方差=0，风险价值 VaR=12，条件风险价值 CVaR=12
+toy_same_mean/A：均值=11，方差=9，风险价值 VaR=10，条件风险价值 CVaR=20
+toy_same_mean/B：均值=11，方差=0，风险价值 VaR=11，条件风险价值 CVaR=11
+toy_occasional_fast/C：均值=10，方差=9，风险价值 VaR=11，条件风险价值 CVaR=11
+toy_occasional_fast/B：均值=11，方差=0，风险价值 VaR=11，条件风险价值 CVaR=11
+通过：35 项分布与截断案例；六个玩具动作的精确手算值均一致
+本脚本尚未核对 C 的预算动态规划、蒙特卡洛模拟或例子 2。
+正在运行 example2.py
+example2_candidate: 起点=S, 终点=G
+       S 前进       -> A      代价   1  p=0.9
+                  -> B      代价  10  p=0.1
+       A 继续 -> M      代价   1  p=1
+       B 继续 -> M      代价  10  p=0.5
+                  -> M      代价  11  p=0.5
+       M X        -> G      代价   1  p=0.9
+                  -> G      代价  30  p=0.1
+       M Y        -> G      代价   6  p=1
+M 处的决策依次对应已花代价（2、20、21）
+XXX 均值 7.75 条件风险价值 CVaR 33.85
+XXY 均值 7.855 条件风险价值 CVaR 32.65
+XYX 均值 7.855 条件风险价值 CVaR 32.65
+XYY 均值 7.96 条件风险价值 CVaR 31.5
+YXX 均值 9.64 条件风险价值 CVaR 24.4
+YXY 均值 9.745 条件风险价值 CVaR 25.45
+YYX 均值 9.745 条件风险价值 CVaR 25.45
+YYY 均值 9.85 条件风险价值 CVaR 26.5
+最优策略： YXX 总代价分布 {8: Fraction(9, 10), 21: Fraction(9, 200), 22: Fraction(9, 200), 50: Fraction(1, 200), 51: Fraction(1, 200)} 最优整数阈值 [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+通过：八种策略及 D 的概率质量函数一致；最多三次转移，总耗时不超过 51
+正在运行 check_budget_dp.py
+例子 1 五个风险水平均满足：精确动态规划值＝穷举最优值＝执行策略评价值； 经验 CVaR 标准误 0.13339060683987725 重复模拟估计偏差 -0.05113209499999627
+例子 2 五个风险水平均满足：精确动态规划值＝穷举最优值＝执行策略评价值； 经验 CVaR 标准误 0.13326754262935853 重复模拟估计偏差 -0.05061908999999787
+通过的精确比较案例数：10；蒙特卡洛结果在三个标准误内的数量：20/20
+A 的本地检查完成；这不代表 C 的求解器或最终网格已验收。

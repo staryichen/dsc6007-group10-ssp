@@ -1,0 +1,8 @@
+toy_two_route/bridge：均值=10.9，方差=882.09，风险价值 VaR=1，条件风险价值 CVaR=100
+toy_two_route/detour：均值=12，方差=0，风险价值 VaR=12，条件风险价值 CVaR=12
+toy_same_mean/A：均值=11，方差=9，风险价值 VaR=10，条件风险价值 CVaR=20
+toy_same_mean/B：均值=11，方差=0，风险价值 VaR=11，条件风险价值 CVaR=11
+toy_occasional_fast/C：均值=10，方差=9，风险价值 VaR=11，条件风险价值 CVaR=11
+toy_occasional_fast/B：均值=11，方差=0，风险价值 VaR=11，条件风险价值 CVaR=11
+通过：35 项分布与截断案例；六个玩具动作的精确手算值均一致
+本脚本尚未核对 C 的预算动态规划、蒙特卡洛模拟或例子 2。

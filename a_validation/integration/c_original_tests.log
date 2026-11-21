@@ -1,0 +1,12 @@
+test_budget_search_interior_false_optimum (test_solvers.SolverTests.test_budget_search_interior_false_optimum) ... ok
+test_exhaustive_history_and_distribution (test_solvers.SolverTests.test_exhaustive_history_and_distribution) ... ok
+test_expected_crosschecks (test_solvers.SolverTests.test_expected_crosschecks) ... ok
+test_geometric_tail (test_solvers.SolverTests.test_geometric_tail) ... ok
+test_improper_and_unreachable_bad_class (test_solvers.SolverTests.test_improper_and_unreachable_bad_class) ... ok
+test_invalid_inputs_and_limits (test_solvers.SolverTests.test_invalid_inputs_and_limits) ... ok
+test_random_acyclic (test_solvers.SolverTests.test_random_acyclic) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.090s
+
+OK

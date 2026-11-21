@@ -1,0 +1,10 @@
+environment,action,cost,probability_exact
+toy_two_route,bridge,1,9/10
+toy_two_route,bridge,100,1/10
+toy_two_route,detour,12,1
+toy_same_mean,A,10,9/10
+toy_same_mean,A,20,1/10
+toy_same_mean,B,11,1
+toy_occasional_fast,C,1,1/10
+toy_occasional_fast,C,11,9/10
+toy_occasional_fast,B,11,1

@@ -70,7 +70,18 @@ C 部分的求解器、E2/E9/E4 与验证已在本地实现。复现命令、接
 
 ```bash
 python -m pip install -r requirements.txt
-python experiments/run_e1.py
+
+# 都在仓库根目录执行，用-m方式运行
+# 脚本默认tag为v1，与已有结果重名时会拒绝运行，因此重跑需换一个新的tag
+# 输出写在results/<实验>_<内容>_<tag>.csv，不会覆盖仓库中的 v1/v3 结果。
+python -m experiments.run_e2 --tag rerun
+python -m experiments.run_e9 --tag rerun
+python -m experiments.run_e4 --tag rerun
+python -m experiments.run_c_validation --tag rerun
+python -m experiments.run_dist_demo --tag rerun
+python -m experiments.run_e3_phase
+# 自检不写文件，直接运行
+python -m pytest -q
 ```
 
 运行结果写入 `results/` 与 `figures/`。绘图统一调用 `ssp.figstyle`，实验脚本不另行设置 `rcParams`。

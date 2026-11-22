@@ -53,6 +53,46 @@ EXAMPLE1_REFERENCE = {
 }
 
 
+def example2() -> SSP:
+    """Example 2: A's five-state candidate, adopted unchanged into the shared envs.
+
+    S -> A : 1 minute (90%);  S -> B : 10 minutes (10%);  no choice at S
+    A -> M : always 1 minute;  B -> M : 10 or 11 minutes (50% each)
+    M -> G : route X, 1 minute (90%) or 30 minutes (10%); or route Y, always 6 minutes
+    So M is reached after 2, 20 or 21 minutes, and with alpha = 0.9 the best
+    choice at M again depends on how much has been spent (see EXAMPLE2_REFERENCE).
+    Unlike example 1, both the next state and the cost are random at S.
+    """
+    S, A, B, M, G = 0, 1, 2, 3, 4  # example 2 numbers its states on its own
+    return SSP(
+        name="example2",
+        state_names=["S", "A", "B", "M", "G"],
+        start=S,
+        goal=G,
+        actions=[["go"], ["continue"], ["continue"], ["X", "Y"], []],
+        outcomes=[
+            [make_outcomes([(A, 1, 0.9), (B, 10, 0.1)])],
+            [make_outcomes([(M, 1, 1.0)])],
+            [make_outcomes([(M, 10, 0.5), (M, 11, 0.5)])],
+            [make_outcomes([(G, 1, 0.9), (G, 30, 0.1)]), make_outcomes([(G, 6, 1.0)])],
+            [],
+        ],
+    )
+
+
+# Exact answers for example 2, all at alpha = 0.9, from A's enumeration of all
+# 8 policies (a_validation/example2.py).  Any integer y from 8 to 21 gives 24.4
+# (the smallest, 8, is VaR_0.9 of the optimal policy's cost); when checking a
+# solver, compare the CVaR value, not y.
+EXAMPLE2_REFERENCE = {
+    "alpha": 0.9,
+    "cvar_always_X": 33.85,
+    "cvar_always_Y": 26.5,       # best policy that looks only at the state
+    "cvar_optimal": 24.4,        # 2 minutes spent at M -> Y, 20 or 21 minutes -> X
+    "y_star_range": (8, 21),
+}
+
+
 def _cost_distribution(env: SSP, choose) -> dict[int, float]:
     """Exact {total cost: prob} of choose(state, spent) -> action index (acyclic env only)."""
     dist: dict[int, float] = {}

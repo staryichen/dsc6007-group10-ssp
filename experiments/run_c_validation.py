@@ -2,8 +2,8 @@
 import argparse
 import itertools
 import numpy as np
-from tests.test_solvers import example2, enumerate_policies
-from ssp.envs.acyclic import example1, _cost_distribution
+from tests.test_solvers import enumerate_policies
+from ssp.envs.acyclic import example1, example2, _cost_distribution
 from ssp.envs._checks import discrete_cvar
 from ssp.solvers.budget_dp import budget_dp
 from ssp.solvers.dist import budget_policy, cost_distribution

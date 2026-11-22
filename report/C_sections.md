@@ -46,7 +46,7 @@ We retain D's forward-propagation PMF and explicitly account for its omitted tai
 
 ## Verification
 
-Production policies, rather than A's reference policies, were executed and checked. For two acyclic examples and alpha in {0.5,0.8,0.9,0.95,0.99}, all 10 budget-DP values equal exhaustive history-dependent policy optima and independently evaluated policy values within 1e-9. At alpha=0.9 the values are 23.9 and 24.4; mean optima are 6.8 and 7.75. The second environment is A's candidate and remains pending shared-environment adoption.
+Production policies, rather than A's reference policies, were executed and checked. For two acyclic examples and alpha in {0.5,0.8,0.9,0.95,0.99}, all 10 budget-DP values equal exhaustive history-dependent policy optima and independently evaluated policy values within 1e-9. At alpha=0.9 the values are 23.9 and 24.4; mean optima are 6.8 and 7.75. Both examples are defined in the shared environment module (`ssp/envs/acyclic.py`); the second was designed by A.
 
 Each example was also simulated for 100,000 trajectories under each of seeds 0–9. All 20 empirical CVaR estimates lie within three estimated standard errors. The standard error is computed using 20,000 multinomial replications of the exact policy distribution, including empirical quantile changes. This is a stochastic diagnostic, not a proof. Exact enumeration is the primary correctness check. Seven regression test groups additionally cover 20 random acyclic models, improper policies, a geometric infinite tail, solver crosschecks, invalid inputs, and an insufficient-budget interior-minimum counterexample.
 

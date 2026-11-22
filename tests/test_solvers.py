@@ -3,7 +3,7 @@ import itertools
 import unittest
 import numpy as np
 from ssp.mdp import SSP, make_outcomes as O
-from ssp.envs.acyclic import example1, _cost_distribution
+from ssp.envs.acyclic import example1, example2, _cost_distribution
 from ssp.envs.toy import two_route
 from ssp.envs.grid import make_grid
 from ssp.envs._checks import discrete_cvar
@@ -12,15 +12,6 @@ from ssp.solvers.expected import (value_iteration, policy_iteration, linear_prog
 from ssp.solvers.budget_dp import budget_dp
 from ssp.solvers.dist import budget_policy, cost_distribution
 from ssp.solvers.tail_evaluation import evaluate_distribution
-
-
-def example2():
-    """A's candidate at 9f62078, kept as a fixture pending B's adoption."""
-    return SSP('example2_candidate', ['S','A','B','M','G'], 0, 4,
-               [['go'],['continue'],['continue'],['X','Y'],[]],
-               [[O([(1,1,.9),(2,10,.1)])], [O([(3,1,1.)])],
-                [O([(3,10,.5),(3,11,.5)])],
-                [O([(4,1,.9),(4,30,.1)]), O([(4,6,1.)])], []])
 
 
 def enumerate_policies(env):

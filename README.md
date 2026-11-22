@@ -66,7 +66,7 @@ report/          报告、slides、poster 源文件
 
 C 部分的求解器、E2/E9/E4 与验证已在本地实现。复现命令、接口、审核版本和分支依赖见 [C 交付说明](docs/C_handoff.md)，报告文字见 [C algorithms and results](report/C_sections.md)。
 
-运行环境为 Python 3.9 及以上，依赖 NumPy、SciPy、Matplotlib。不要求 GPU，不依赖网络。
+运行环境为 Python 3.9 及以上，依赖 NumPy、SciPy、Matplotlib，运行自检还需要 pytest。不要求 GPU，不依赖网络。
 
 ```bash
 python -m pip install -r requirements.txt
@@ -78,7 +78,9 @@ python -m experiments.run_e2 --tag rerun
 python -m experiments.run_e9 --tag rerun
 python -m experiments.run_e4 --tag rerun
 python -m experiments.run_c_validation --tag rerun
-python -m experiments.run_dist_demo --tag rerun
+# dist_demo 只要 figures/ 里已有任何同 tag 的图就会拒绝运行，上面几条已生成 *_rerun.png，所以单独用一个 tag
+python -m experiments.run_dist_demo --tag rerun_dist
+# E3 是精确计算、没有随机性，不带 tag：重跑会用完全相同的结果覆盖 results/e3_phase_v1.csv 和 figures/f4_phase、f_alpha_gain
 python -m experiments.run_e3_phase
 # 自检不写文件，直接运行
 python -m pytest -q
